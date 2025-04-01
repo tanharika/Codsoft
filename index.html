@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y Tanharika | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Y Tanharika</h1>
+        <p>Web Developer | UI/UX Enthusiast | Problem Solver</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about-flex">
+        <div class="about-image">
+            <img src="PHOTO.jpg" alt="Y Tanharika" class="profile-pic">
+        </div>
+        <div class="about-text">
+            <h2><u>About Me</u></h2>
+            <p>Hi! I'm Y Tanharika, a passionate developer based in Hyderabad.
+                As a fresher, I'm eager to contribute to meaningful projects and
+                bring creative ideas to life. I specialize in building responsive and
+                user-friendly websites and applications.
+                I am actively seeking internship opportunities to expand my skill set and
+                gain hands-on experience in a professional environment.
+                I am committed to continuous learning and growth in a collaborative team.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2><u>Skills</u></h2>
+        <p>As I am an engineering student, I am currently learning these languages:</p>
+        <ul>
+            <li>
+                <h4>HTML & CSS</h4>
+                <p>Basic Structure of an HTML document and styling using CSS</p>
+            </li>
+            <li>
+                <h4>JavaScript (ES6+)</h4>
+                <p>Adding interactivity to websites</p>
+            </li>
+            <li>
+                <h4>Node.js</h4>
+                <p>Server-side JavaScript & web applications</p>
+            </li>
+            <li>
+                <h4>Git & GitHub</h4>
+                <p>Version control and collaboration</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <section
+            id="achievements" style="opacity: 0; transform: translateY(30px); transition: all 1s ease;">
+        </section>
+        <h2><u>My Achievements</u></h2>
+        <div class="achievements-container">
+            <div class="achievement-card">
+                <h3>Hackathon Participant</h3>
+                <p>Participated in Hackathon Teckknow-2.0 2025 - Built a real-time project.</p>
+                <a href="#" target="_blank">View Certificate</a> |
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="achievement-card">
+                <h3>Python Programming</h3>
+                <p>Certified in Python Programming Essentials Course.</p>
+                <a href="#" target="_blank">View Certificate</a>
+            </div>
+        </div>
+    </section>
+    <!-- Animation Script -->
+<script>
+    window.onload = () => {
+        const section = document.getElementById('achievements');
+        section.style.opacity = 1;
+        section.style.transform = 'translateY(0)';
+
+        const cards = document.querySelectorAll('.achievement-card');
+        cards.forEach((card, index) => {
+            setTimeout(() => {
+                card.style.opacity = 1;
+                card.style.transform = 'translateY(0)';
+            }, 500 + index * 300); // 0.3s delay between each card
+        });
+    };
+</script>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2><u>My Resume</u></h2>
+        <p>
+            Take a look at my professional background, skills, and project experience.
+        </p>
+        <div class="resume-btns">
+            <a id="resumeLink" href="#" target="_blank">View My Resume</a>
+            <button onclick="copyResumeLink()">Copy Resume Link</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+</section>
+<section id="contact">
+   <h2>Contact Me</h2>
+   <div class="contact-info">
+       <span>&#9993; tanharikayarrarapu@gmail.com</span>
+   </div>
+   <div class="socials">
+       <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+       <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+       <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+       <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+   </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Y Tanharika. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function copyResumeLink() {
+            const resumeLink = document.getElementById('resumeLink').href;
+            navigator.clipboard.writeText(resumeLink).then(() => {
+                alert('Resume link copied to clipboard!');
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>

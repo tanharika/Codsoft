@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #444;
+    padding: 0.75rem 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+}
+
+.about-flex {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.about-text {
+    flex: 2 1 300px;
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.skills ul li {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.achievements-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.achievement-card {
+    background: #978e96;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    color: white;
+}
+
+.achievement-card a {
+    color: #ffeb3b;
+    text-decoration: underline;
+}
+
+#resume .resume-btns {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#resume a {
+    color: #00bcd4;
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+
+#resume button {
+    margin-top: 1rem;
+    background: #0097a7;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#resume button:hover {
+    background: #0097a7;
+}
+
+#contact {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.socials a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #00bcd4;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .about-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
